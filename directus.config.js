@@ -1,4 +1,6 @@
 // Heroku to Directus mappings
+require('dotenv').config({path: 'path_to_env_file'});
+
 module.exports = {
   DB_CONNECTION_STRING:
     (process.env.DATABASE_CONNECTION_POOL_URL || process.env.DATABASE_URL) +
